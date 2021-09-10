@@ -63,6 +63,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: Dockerfile.speaker
+          build-args: GIT_TAG=${{ env.LATEST_TAG }}
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME || 'nobody' }}/${{ env.IMAGE_NAME }}:latest
             ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
