@@ -1,0 +1,3 @@
+[submodule "metallb"]
+	path = metallb
+	url = https://github.com/metallb/metallb.git
