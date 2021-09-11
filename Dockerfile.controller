@@ -1,0 +1,9 @@
+FROM golang:alpine AS builder
+ADD ./metallb /metallb
+WORKDIR /metallb/controller
+RUN go build .
+
+FROM busybox:1.34.0
+COPY --from=builder /metallb/controller/controller /bin/metallb-controller
+USER nobody
+ENTRYPOINT [ "/bin/metallb-controller" ]
