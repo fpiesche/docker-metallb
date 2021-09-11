@@ -64,7 +64,9 @@ jobs:
         with:
           file: Dockerfile.speaker
           tags: |
+            ${{ secrets.DOCKERHUB_USERNAME || 'nobody' }}/${{ env.IMAGE_NAME }}:${{ env.LATEST_TAG }}
             ${{ secrets.DOCKERHUB_USERNAME || 'nobody' }}/${{ env.IMAGE_NAME }}:latest
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ env.LATEST_TAG }}
             ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
           platforms: ${{ env.PLATFORMS }}
           push: ${{ env.PUSH_IMAGE }}
