@@ -1,12 +1,14 @@
 # Multi-arch builds for MetalLB
 
-![build](https://github.com/fpiesche/docker-metallb/actions/workflows/build-release.yml/badge.svg)
+![build](https://github.com/fpiesche/docker-metallb/actions/workflows/build-release.yaml/badge.svg)
 
 # Quick reference
 
 - **Image Repositories**:
-    - Docker Hub: [`florianpiesche/metallb`](https://hub.docker.com/r/florianpiesche/metallb)
-    - GitHub Packages: [`ghcr.io/fpiesche/metallb`](https://ghcr.io/fpiesche/metallb)
+    - Docker Hub: [`florianpiesche/metallb-speaker`](https://hub.docker.com/r/florianpiesche/metallb-speaker)
+        [`florianpiesche/metallb-controller`](https://hub.docker.com/r/florianpiesche/metallb-controller)
+    - GitHub Packages: [`ghcr.io/fpiesche/metallb-speaker`](https://ghcr.io/fpiesche/metallb-speaker)
+        [`ghcr.io/fpiesche/metallb-controller`](https://ghcr.io/fpiesche/metallb-controller)
 
 - **Maintained by**:  
   	[Florian Piesche](https://github.com/fpiesche)
