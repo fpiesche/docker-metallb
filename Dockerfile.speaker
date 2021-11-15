@@ -3,7 +3,7 @@ ADD ./metallb /metallb
 WORKDIR /metallb/speaker
 RUN go build .
 
-FROM alpine:3.14.2
+FROM alpine:3.14.3
 COPY --from=builder /metallb/speaker/speaker /bin/metallb-speaker
 USER nobody
 ENTRYPOINT [ "/bin/metallb-speaker" ]
