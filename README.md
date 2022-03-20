@@ -1,3 +1,5 @@
+# This repository is ARCHIVED as MetalLB has multi-architecture images avaialble from armv7 upwards at quay.io/metallb/controller and quay.io/metallb/speaker.
+
 # Multi-arch builds for MetalLB
 
 ![build](https://github.com/fpiesche/docker-metallb/actions/workflows/build-release.yaml/badge.svg)
